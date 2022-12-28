@@ -1,0 +1,102 @@
+/*
+COLOR PALETTE
+
+PAGER BACKGROUND: #283033
+PAGER DISPLAY: #9EC4B3
+PAGER DISPLAY TEXT COLOR: #000000
+
+PHONE BACKGROUND: #D9D9D9
+PHONE DISPLAY: #9EC4B3
+PHONE DISPLAY TEXT COLOR: #F8F8F8
+PHONE KEY: #F8F8F8
+
+RESET AND SEND BUTTON BORDER COLOR: #0B0B0B
+
+RESET BUTTON BACKGROUND: #BE482A
+RESET BUTTON TEXT COLOR: #F8F8F8
+
+SEND BUTTON BACKGROUND: #3D9C7C
+SEND BUTTON TEXT COLOR: #0B0B0B
+*/
+
+
+html, body, button{
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#main-container {
+    background-color: lightgrey;
+    margin: 30px auto;
+    width: 500px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.pager-container {
+    height: 160px;
+}
+
+.pager-container, .phone-container {
+    color: white;
+    background-color: #283033;
+    max-width: 500px;
+    width: 100%;
+    margin: 20px auto;
+    padding-top: 1px;
+}
+
+#pager-num-display, #phone-num-display {
+    height: 70px;
+    width: 95%;
+    margin: 20px auto;
+}
+
+#pager-num-display {
+    background-color: #9EC4B3;
+}
+
+#phone-num-display {
+    background-color: #444444;
+}
+
+.number-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+button:hover {
+    opacity: 90%;
+}
+
+.phone-numpad, .reset-send-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.phone-numpad > button {
+    background-color: #F8F8F8;
+    width: 31%;
+    height: 50px;
+    cursor: pointer;
+}
+
+.reset-send-btns > button {
+    width: 98%;
+    margin: 2px auto;
+}
+
+#reset-btn {
+    color: white;
+    background-color: #BE482A;
+}
+
+#send-btn {
+    color: black;
+    background-color: #3D9C7C;
+}

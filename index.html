@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<title></title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<main id="main-container">
+		<div class="pager-container">
+			<h1>Pager</h1>
+			<div id="pager-num-display" class="number-display">
+				<h2></h2>
+			</div>
+		</div>
+		<div class="phone-container">
+			<h1>Phone</h1>
+			<div id="phone-num-display" class="number-display">
+				<h2></h2>
+			</div>
+			<div class="phone-numpad">
+				<button onclick="showNumbers(1)">1</button>
+				<button onclick="showNumbers(2)">2</button>
+				<button onclick="showNumbers(3)">3</button>
+				<button onclick="showNumbers(4)">4</button>
+				<button onclick="showNumbers(5)">5</button>
+				<button onclick="showNumbers(6)">6</button>
+				<button onclick="showNumbers(7)">7</button>
+				<button onclick="showNumbers(8)">8</button>
+				<button onclick="showNumbers(9)">9</button>
+				<button onclick="addStar()">*</button>
+				<button onclick="showNumbers(0)">0</button>
+				<button onclick="addNumSign()">#</button>
+			</div>
+			<div class="phone-numpad reset-send-btns">
+				<button id="reset-btn" onclick="reset()">RESET</button>
+				<button id="send-btn" onclick="sendNum()">SEND</button>
+			</div>
+		</div>
+	</main>
+	<script src="index.js"></script>
+</body>
+
+</html>
